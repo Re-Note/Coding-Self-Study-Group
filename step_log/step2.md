@@ -46,4 +46,8 @@
 
 ### 2장 수행 결과
 
-### 셀프체크 수행 결과
+![image](https://imgur.com/igQSihk.png)
+
+### 셀프 체크 수행 결과
+
+![image](https://imgur.com/AD9eSST.png)
