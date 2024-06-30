@@ -36,4 +36,8 @@ hello.html: 서버에 요청하는 파일로서 웹 브라우저에서 localhost
 
 ### 1장 수행 결과
 
+![image](https://imgur.com/GbrDIv3.png)
+
 ### 셀프체크 수행 결과
+
+![image](https://imgur.com/Lwzg4WP.png)
