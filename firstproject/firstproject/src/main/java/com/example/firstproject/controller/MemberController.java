@@ -73,4 +73,19 @@ public class MemberController {
         }
         return "redirect:/members/" + memberEntity.getId();
     }
+
+    @GetMapping("/members/{id}/delete")
+    public String delete(@PathVariable Long id,RedirectAttributes rttr) {
+        log.info("삭제 요청이 들어왔습니다!!");
+        // 1. 삭제 대상을 가져옴
+        Member target = memberRepository.findById(id).orElse(null);
+        log.info(target.toString());
+        // 2. 대상 삭제
+        if(target != null) {
+            memberRepository.delete(target);
+            rttr.addFlashAttribute("msg", "삭제됬습니다.");
+        }
+        // 3. 결과 페이지로 리다이렉트
+        return "redirect:/members";
+    }
 }
